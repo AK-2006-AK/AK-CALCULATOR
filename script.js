@@ -1,4 +1,11 @@
 const resultInput = document.getElementById('result');
+const startScreen = document.getElementById('start-screen');
+const calculator = document.getElementById('calculator');
+
+function startCalculator() {
+    startScreen.style.display = 'none';
+    calculator.style.display = 'block';
+}
 
 function appendNumber(number) {
     resultInput.value += number;
